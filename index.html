@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html><head><meta charset="UTF-8"><title>Hello</title><style>html,head,body { padding:0; margin:0; }
+<html><head><meta charset="UTF-8"><title>NamedFunction</title><style>html,head,body { padding:0; margin:0; }
 body { font-family: calibri, helvetica, arial, sans-serif; }</style><script type="text/javascript">
 (function() {
 'use strict';
@@ -7764,12 +7764,18 @@ var _elm_lang$html$Html$details = _elm_lang$html$Html$node('details');
 var _elm_lang$html$Html$summary = _elm_lang$html$Html$node('summary');
 var _elm_lang$html$Html$menuitem = _elm_lang$html$Html$node('menuitem');
 var _elm_lang$html$Html$menu = _elm_lang$html$Html$node('menu');
-var _user$project$Hello$main = _elm_lang$virtual_dom$Native_VirtualDom.staticProgram(
-	_elm_lang$html$Html$text('Hello'));
+var _user$project$NamedFunction$sum = F2(
+	function (x, y) {
+		return x + y;
+	});
+var _user$project$NamedFunction$number1 = A2(_user$project$NamedFunction$sum, 2, 3);
+var _user$project$NamedFunction$main = _elm_lang$virtual_dom$Native_VirtualDom.staticProgram(
+	_elm_lang$html$Html$text(
+		_elm_lang$core$Basics$toString(_user$project$NamedFunction$number1)));
 var Elm = {};
-Elm['Hello'] = Elm['Hello'] || {};
-if (typeof _user$project$Hello$main !== 'undefined') {
-    _user$project$Hello$main(Elm['Hello'], 'Hello', undefined);
+Elm['NamedFunction'] = Elm['NamedFunction'] || {};
+if (typeof _user$project$NamedFunction$main !== 'undefined') {
+    _user$project$NamedFunction$main(Elm['NamedFunction'], 'NamedFunction', undefined);
 }
 
 if (typeof define === "function" && define['amd'])
@@ -7801,4 +7807,4 @@ for (var publicModule in Elm)
 }
 
 }).call(this);
-</script></head><body><script type="text/javascript">Elm.Hello.fullscreen()</script></body></html>
+</script></head><body><script type="text/javascript">Elm.NamedFunction.fullscreen()</script></body></html>
