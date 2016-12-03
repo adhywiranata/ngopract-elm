@@ -7764,14 +7764,21 @@ var _elm_lang$html$Html$details = _elm_lang$html$Html$node('details');
 var _elm_lang$html$Html$summary = _elm_lang$html$Html$node('summary');
 var _elm_lang$html$Html$menuitem = _elm_lang$html$Html$node('menuitem');
 var _elm_lang$html$Html$menu = _elm_lang$html$Html$node('menu');
-var _user$project$NamedFunction$sum = F2(
+var _user$project$NamedFunction$subtract = F2(
+	function (x, y) {
+		return x - y;
+	});
+var _user$project$NamedFunction$add = F2(
 	function (x, y) {
 		return x + y;
 	});
-var _user$project$NamedFunction$numberSum = A2(_user$project$NamedFunction$sum, 2, 3);
+var _user$project$NamedFunction$finalNumber = A2(
+	_user$project$NamedFunction$subtract,
+	1,
+	A2(_user$project$NamedFunction$add, 2, 3));
 var _user$project$NamedFunction$main = _elm_lang$virtual_dom$Native_VirtualDom.staticProgram(
 	_elm_lang$html$Html$text(
-		_elm_lang$core$Basics$toString(_user$project$NamedFunction$numberSum)));
+		_elm_lang$core$Basics$toString(_user$project$NamedFunction$finalNumber)));
 var Elm = {};
 Elm['NamedFunction'] = Elm['NamedFunction'] || {};
 if (typeof _user$project$NamedFunction$main !== 'undefined') {

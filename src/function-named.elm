@@ -8,7 +8,7 @@ sum : Int -> Int -> Int
 -- named function
 sum x y =
   x + y
--- define a number1 variable which have add1 return value as its own value
+-- define a numberSum variable which have sum return value as its own value
 numberSum =
   sum 2 3
 -- main shows the index html page
