@@ -1,8 +1,15 @@
-import Html exposing (div, text, button)
+import Html exposing (div, text, button, classList)
 import Html.Events exposing (onClick)
+import Html.Attributes exposing (classList)
 
 main =
   div []
     [
-      button [ onClick DoConsoleLog ] [ text "Click Me" ]
+      button
+      [ classList
+        [ ("btn")
+        , ("btn-me")
+        ]
+      ]
+      [ text "Click Me" ]
     ]
