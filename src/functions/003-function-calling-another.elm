@@ -2,7 +2,7 @@ module FunctionCallAnother exposing (..)
 
 import Html exposing (text)
 
--- function signature (this is optional)
+-- function signature (this is optional) or also called type annotations
 -- [read: int as a parameter 1 and 2, and int as the return]
 multiply : Int -> Int -> Int
 -- named function
