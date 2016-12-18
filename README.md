@@ -1,6 +1,6 @@
-# Ngoprek Elm
+# Ngopract Elm
 
-Just "ngoprek-ngoprek" Elm Lang with many examples.
+Just Ngoding and Practice / "ngoprek-ngoprek" Elm Lang with many examples.
 
 ## Modules
 
