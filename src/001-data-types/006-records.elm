@@ -11,11 +11,13 @@ recordName =
 recordAge =
   aRecord.age
 
-updatedNameRecord =
+updatedAgeRecord =
   { aRecord |
       name = "Joan",
       age = aRecord.age + 1
   }
+
+{ name, age } = updatedAgeRecord -- Destructuring
 
 main =
   text
@@ -24,5 +26,9 @@ main =
   ++ "Record's name: "
   ++ (toString recordName) -- "John"
   ++ "Updated Record: "
-  ++ (toString updatedNameRecord) -- { name: "Joan", age: 25 }
+  ++ (toString updatedAgeRecord) -- { name: "Joan", age: 26 }
+  ++ "Destructuring - Name: "
+  ++ (toString name) -- "Joan"
+  ++ "Destructuring - Age: "
+  ++ (toString age) -- 26
   )
