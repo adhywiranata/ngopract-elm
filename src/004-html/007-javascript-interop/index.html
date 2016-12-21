@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <style>
+      h1 {
+        font-size: 3em;
+        color: #96281B;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main"></div>
+    <script src="talk.js"></script>
+    <script>
+      var app = Elm.MeTalkToJavaScript.fullscreen();
+
+      app.ports.sendTest.subscribe(function(word) {
+        console.log(word);
+      });
+    </script>
+  </body>
+</html>
