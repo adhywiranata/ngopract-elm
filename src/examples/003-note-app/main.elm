@@ -117,4 +117,4 @@ update msg model =
             }
           ]
       in
-        { model | notes = updatedNotes }
+        { model | notes = updatedNotes, addFormTitle = "", addFormContent = "" }
