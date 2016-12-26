@@ -1,21 +1,13 @@
-<html>
-  <head>
-    <style>
-      h1 {
-        font-size: 3em;
-        color: #96281B;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="main"></div>
-    <script src="talk.js"></script>
-    <script>
-      var app = Elm.MeTalkToJavaScript.fullscreen();
-
-      app.ports.sendTest.subscribe(function(word) {
-        console.log(word);
-      });
-    </script>
-  </body>
-</html>
+<div id="spelling"></div>
+<script src="spelling.js"></script>
+<script>
+    var app = Elm.Spelling.fullscreen();
+    app.ports.check.subscribe(function(word) {
+        var suggestions = spellCheck(word);
+        app.ports.suggestions.send(suggestions);
+    });
+    function spellCheck(word) {
+        // have a real implementation!
+        return ['sd', 'as'];
+    }
+</script>
