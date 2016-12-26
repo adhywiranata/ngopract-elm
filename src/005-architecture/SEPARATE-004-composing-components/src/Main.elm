@@ -1,8 +1,10 @@
 module Main exposing (..)
 
 import Html exposing (Html, program)
-import Widget
 
+{-- File location: src/components/Widget.elm --}
+-- this widget import is configured separately using the source-directories in elm-package.json!
+import Widget
 
 -- MODEL
 
