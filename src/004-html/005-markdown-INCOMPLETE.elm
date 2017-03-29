@@ -1,6 +1,5 @@
 import Markdown
 
-
 main =
   Markdown.toHtml [] markdown
 
