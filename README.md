@@ -2,6 +2,8 @@
 
 Just Ngoding and Practice / "ngoprek-ngoprek" Elm Lang with many examples.
 
+`elm-reactor`
+
 ## Modules
 
 - [Data Types](src/001-data-types/data-types.md)
