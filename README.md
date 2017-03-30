@@ -2,7 +2,10 @@
 
 Just Ngoding and Practice / "ngoprek-ngoprek" Elm Lang with many examples.
 
-`elm-reactor`
+## Running
+``console
+  elm-reactor
+``
 
 ## Modules
 
