@@ -13,13 +13,13 @@ type alias Model =
 -- Definition: Html.program expects a tuple with (model, command)
 init : ( Model, Cmd Msg )
 init =
-    ( "Hello", Cmd.none )
+    ( "Hello, I'm just an initial state", Cmd.none )
 
 -- MESSAGES
 -- Definition: Messages are things that happen in our applications that our component responds to
--- define Msg containing NoOp function
+-- define Msg containing NothingToDo function
 type Msg
-    = NoOp
+    = NothingToDo
 
 -- VIEW
 -- Definition: display the HTML components as virtual DOM
@@ -35,7 +35,7 @@ update : Msg -> Model -> ( Model, Cmd Msg )
 update msg model =
     case msg of
         -- return current state and command. This function actually do nothing!
-        NoOp ->
+        NothingToDo ->
             ( model, Cmd.none )
 
 -- SUBSCRIPTIONS
