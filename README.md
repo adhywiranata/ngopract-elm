@@ -3,9 +3,9 @@
 Just Ngoding and Practice / "ngoprek-ngoprek" Elm Lang with many examples.
 
 ## Running
-``console
+```
   elm-reactor
-``
+```
 
 ## Modules
 
