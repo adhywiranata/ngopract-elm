@@ -52,7 +52,7 @@ usersDecoderResultParser result =
                 Result.Ok userList ->
                     userList
 
-                Result.Err userList ->
+                Result.Err _ ->
                     []
     in
         parsedList
