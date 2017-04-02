@@ -28,7 +28,7 @@ jsonStringified =
           "age": 18,
           "address": "nice street 35",
           "accountVerified": true
-        },
+        }
       ]"""
 
 
