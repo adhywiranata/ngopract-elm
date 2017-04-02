@@ -53,9 +53,7 @@ usersDecoderResultParser result =
                     userList
 
                 Result.Err userList ->
-                    [ { accountVerified = False, address = "test", age = 30, name = "Budi" }
-                    , { accountVerified = True, address = "manaaja", age = 20, name = "Mike" }
-                    ]
+                    []
     in
         parsedList
 
